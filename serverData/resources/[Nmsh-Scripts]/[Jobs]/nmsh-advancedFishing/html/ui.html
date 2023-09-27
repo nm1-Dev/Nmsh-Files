@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="css/fontawesome.css" />
+    </head>
+    <body>
+        <div class="generalFishMenu">
+            <div class="css-blurry-gradient1"></div>
+            <div class="css-blurry-gradient2"></div>
+            <div class="app">
+                <div class="topBar">
+                    <div class="infoButton"><i class="fas fa-info-circle"></i> Information</div>
+                    <div class="backButtonMain"><i class="fa fa-home" aria-hidden="true"></i> Main Menu</div>
+                    <div class="title">Advanced Fishing</div>
+                </div>
+
+                <div class="infoMenuApp">
+                    <div class="middleInfoArea">
+                        <li>
+                            <p>What is FISHPASS Level?</p>
+                            A system where you can earn xp by fishing and doing quests and level up accordingly. This system works in direct
+                            proportion to the following "Fish Level" system
+                        </li>
+                        <li>
+                            <p>What is Fish Level?</p>
+                            Each fish has its own level requirement, if the level of the fish is higher than your FISHPASS Level, you can keep the
+                            fish (NOTE: Like the fish level, there is also a requirement for rod level that affects the catchability of the fish and
+                            these are independent of each other)
+                        </li>
+                        <li>
+                            <p>What is Fishingrod Level?</p>
+                            Every fish has a specific Fishing Rod Level requirement to be catchable, the fishing rod you are fishing with is the one
+                            you need to keep If it is lower than the Angling Requirement Level of the fish you want, you cannot keep the fish.
+                        </li>
+                        <li>
+                            <p>How to Raise The Fishing Rod Level?</p>
+                            Contact the Fishing Rod Upgrade NPC to upgrade your current fishing rod to the next level fishing rod for a fee. (During
+                            this process, depending on your luck, the fishing rod in your hand may break)
+                        </li>
+                        <li>
+                            <p>Tasks and Functioning</p>
+                            If you finish any mission and receive your reward, all your missions will be reset in an average of 3 days. If you do your
+                            missions without interruption, it will help you to increase your FISHPASS level quickly.
+                        </li>
+
+                        <span class="infoBottomX">
+                            <div align="center">If you do not use bait, there will be a higher rate of trash caught in your fishing rod..</div>
+                            <div align="center">
+                                If you do not use illegal bait, the endangered fish you try to catch in the illegal area will be caught on your
+                                fishing rod. will not get stuck!
+                            </div>
+                            <div align="center">
+                                To catch a fish, you must meet both the Fish Level and Fishing Rod Level requirements in the FISHPASS menu.
+                            </div>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="mainMenuApp">
+                    <div class="middleSection">
+                        <div class="middleLeftArea">
+                            <div class="middleText">Balıklar</div>
+                            <div class="inMiddle"></div>
+                        </div>
+                        <div class="middleRightArea">
+                            <div class="rightText">Görevlerin</div>
+                            <div class="rightArea"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottomBar">
+                    <div class="topBarInfoSection">
+                        <div class="currentLevel" id="currentLevelBottom">1 Lv.</div>
+                    </div>
+                    <div class="levelInfoSection">
+                        <div class="levelInfoLeft">
+                            <span id="currentText">Current: </span>
+                            <p id="currentXpBottom">0 XP</p>
+                        </div>
+                        <div class="levelInfoRight">
+                            <p id="currentRequiredBottom">1000 XP</p>
+                            <span id="requiredText">Required: </span>
+                        </div>
+                    </div>
+                    <div class="topBarLevelSection">
+                        <div class="levelFill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="upgradeRod">
+            <div class="upTopSection">Select the level you want to upgrade</div>
+            <div class="upgradeTop">
+                <div class="upTopItem" id="2">2 Lv.</div>
+                <div class="upTopItem" id="3">3 Lv.</div>
+                <div class="upTopItem" id="4">4 Lv.</div>
+                <div class="upTopItem" id="5">5 Lv.</div>
+            </div>
+
+            <div class="upgradeMiddle">
+                <div class="upgradeItem" id="currentRodLv">1 Lv.</div>
+                <span class="material-icons" id="arrowsIcon"> double_arrow </span>
+                <div class="upgradeItem" id="hedefRodLv">2 Lv.</div>
+            </div>
+
+            <div class="infoRodUp">Your existing fishing rod may break during this process!</div>
+
+            <div class="bottomUpg">
+                <div class="upgradeRodButton">
+                    Upgrade
+                    <span class="priceUpgrade">$500</span>
+                </div>
+                <div class="cancelRodButton">Cancel</div>
+            </div>
+        </div>
+
+        <!-- ! ALT TARAFA JS YAZILACAK -->
+
+        <div class="marketSelectMenu">
+            <div class="marketSelectText">Which menu would you like to open?</div>
+            <div class="marketSelectItemArea">
+                <div class="marketSelectMenuItem" id="buyMenuOpen">
+                    <div class="marketSelectItemText">
+                        <span>Buy Menu</span>
+                    </div>
+                    <img src="./css/imgs/satin.png" alt="" />
+                </div>
+                <div class="marketSelectMenuItem" id="sellMenuOpen">
+                    <div class="marketSelectItemText">
+                        <span>Sell Menu</span>
+                    </div>
+                    <img src="./css/imgs/satis.png" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="classMarketSection">
+            <div class="MarketTextTop">
+                <span class="marketText">Fishmonger - Shop</span>
+                <span class="material-icons" id="marketCloseButon"> close </span>
+            </div>
+
+            <div class="marketLine"></div>
+
+            <div class="marketMiddle"></div>
+        </div>
+
+        <div class="classSellItemSection">
+            <div class="sellItemTextTop">
+                <span class="sellItemsText">Fisherman - Wholesaler</span>
+                <span class="material-icons" id="sellCloseButon"> close </span>
+            </div>
+            <div class="sellMiddleSection">
+                <div class="sellItemMiddle"></div>
+
+                <div class="sellItemRightArea">
+                    <div class="sellItemLevelArea">
+                        <div class="sellItemCircle">50 Lv.</div>
+                        <div class="sellItemCharName">FIRSTNAME LASTNAME</div>
+                    </div>
+                    <div class="sellItemCanSellFishes">
+                        <div class="canSellFishText">Fish you can sell</div>
+                        <div class="canSellItemAreaS"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="baitText">
+            <div class="currentBaitArea">
+                <span class="material-icons" id="baitIcon"> set_meal </span>
+                <div class="currentBaitName">x</div>
+            </div>
+        </div>
+
+        <div id="tuslar"></div>
+
+        <script src="js/fontawesome.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+
+	['koko'] = {
+		label = 'Koko Test',
+		type = '',
+		defaultDuty = true,
+		offDutyPay = true,
+		grades = {
+			['0'] = {
+				name = 'Staff', isboss = true,
+				payment = 2500
+			},
+		},
+	},

@@ -1,0 +1,170 @@
+body {
+	position: relative;
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+#radiolist {
+    display: none;
+    position: fixed;
+    top: 5%;
+    right: 0%;
+    text-align: right;
+    padding: 5px;
+    color: rgb(148, 150, 151);
+    font-size: 15px;
+    text-shadow: 1.25px 0 0 #000, 0 -1.25px 0 #000, 0 1.25px 0 #000, -1.25px 0 0 #000;
+}
+
+#radio {
+    display: none;
+    position: fixed;
+	width: 375px;
+	height: 795px;
+	right: -3%;
+	bottom: -15%;
+}
+
+#onoff {
+	position: absolute;
+	top: 19%;
+	left: 67%;
+	padding: 25px 25px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    outline: none;
+}
+
+#volup {
+	position: absolute;
+	top: 15%;
+	left: 43.5%;
+	padding: 35px 12px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    outline: none;
+}
+
+#voldown {
+	position: absolute;
+	top: 15%;
+	left: 50.5%;
+	padding: 35px 12px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    outline: none;
+}
+
+#togmode {
+	position: absolute;
+	top: 67.5%;
+	left: 43.5%;
+	padding: 13px 25px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    outline: none;
+}
+
+.hovertext {
+    position: absolute;
+    top: -5px;
+    right: 105%;
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 4px 4px;
+    border-radius: 6px;
+    z-index: 1;
+}
+
+#onoff:hover .hovertext, #volup:hover .hovertext, #voldown:hover .hovertext, #togmode:hover .hovertext {
+    visibility: visible;
+}
+
+.screeninfo {
+    display: none;
+	position: absolute;
+	background-color: #1E1E1E;
+	top: 39%;
+	left: 34.5%;
+    color: white;
+    font-size: 14px;
+}
+
+.screen-1 {
+    display: none;
+	position: absolute;
+	top: 45%;
+	left: 35.5%;
+}
+
+.screen-1 input {
+	text-align: center;
+	border: none;
+	background-color: #1E1E1E;
+	padding: 35px 3px;
+	font-size: 20px;
+    color: white;
+	outline: none;
+}
+
+.screen-1 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.screen-2 {
+    display: none;
+	position: absolute;
+	top: 45%;
+	left: 35.5%;
+}
+
+.screen-2 input {
+	text-align: center;
+	border: none;
+	background-color: #1E1E1E;
+	padding: 35px 0px;
+	font-size: 15px;
+    max-width: 56.5%;
+    color: white;
+	outline: none;
+}
+
+.screen-3 {
+    display: none;
+	position: absolute;
+	top: 45%;
+	left: 35.5%;
+}
+
+.screen-3 input {
+	text-align: center;
+	border: none;
+	background-color: #1E1E1E;
+	padding: 35px 0px;
+	font-size: 15px;
+    max-width: 56.5%;
+    color: white;
+	outline: none;
+}
+
+.screenchange {
+    display: none;
+	position: absolute;
+	top: 60.8%;
+	left: 37%;
+}
+
+.screenchange button {
+	background-color: #1E1E1E;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.screenchange button:hover {
+    outline: none;
+    border: none;
+}

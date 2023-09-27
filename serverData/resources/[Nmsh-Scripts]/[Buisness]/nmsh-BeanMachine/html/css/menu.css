@@ -1,0 +1,19 @@
+body {
+    overflow: hidden;
+    user-select: none;
+    font-weight: 650;
+    font-family: 'Lato', sans-serif;
+}
+
+.mainmenu-container {
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    background: url(https://cdn.discordapp.com/attachments/926465631770005514/963455018374139904/BEANMACHINE.png);
+    left: 50%;
+    top: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-color: #000000;
+}

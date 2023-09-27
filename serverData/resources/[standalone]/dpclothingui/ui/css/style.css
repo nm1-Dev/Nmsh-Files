@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100&display=swap');
+
+body{
+    overflow: hidden;
+}
+
+.selectnone {
+    -webkit-touch-callout: none; 
+      -webkit-user-select: none; 
+       -khtml-user-select: none; 
+         -moz-user-select: none; 
+          -ms-user-select: none; 
+              user-select: none;
+}
+
+.f9clothigthemenu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 5px;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+.f9clothingmenu{
+    display: none;
+}
+
+.clothingbuttons{
+    position: absolute;
+    z-index: 100;
+}
+
+.clothingbutton{
+    display: flex;
+}
+
+.clothingbutton > img{
+    transform: scale(0.7);
+}
+
+.clothingbutton:hover{
+    transform: scale(1.1);
+    border: 3px solid #1998bd;
+}
+
+.clothingcircle{
+    position: relative;
+    width: 44vh;
+    height: 44vh;
+    border-right: 8px solid #000000ba;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid #ff000000;
+    border-left: 8px solid #ff000000;
+    border-radius: 50%;
+}
+
+.f9flexdiv1{
+    position: relative;
+    width: 104vh;
+    height: 47vh;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.f9flexdiv2{
+    position: relative;
+    width: 33.6vh;
+    height: 46.2vh;
+    height: 46vh;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.f9flexdiv3{
+    position: relative;
+    width: 72vh;
+    height: 45.5vh;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.f9onetitle{
+    position: relative;
+    height: 2vh;
+    width: 6vh;
+    font-family: sans-serif;
+    FONT-WEIGHT: 600;
+    background: #020202ed;
+    border-radius: 1vh;
+    text-align: center;
+    color: white;
+    font-size: 1.3vh;
+    line-height: 2vh;
+    transform: rotate(-180deg);
+}
+
+
+.f9refreshside{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.f9divcircle1{
+    position: relative;
+    width: 1.4vh;
+    height: 1.4vh;
+    background: #000000;
+    border-radius: 3vh;
+}
+
+.f9divcircle2{
+    position: relative;
+    width: 1.4vh;
+    height: 1.4vh;
+    background: #000000;
+    border-radius: 3vh;
+    left: 5vh;
+}
+
+.f9divcircle3{
+    position: relative;
+    width: 1.4vh;
+    height: 1.4vh;
+    background: #000000;
+    border-radius: 3vh;
+    left: 6.4vh;
+}
+
+.f9divcircle4{
+    position: relative;
+    width: 1.4vh;
+    height: 1.4vh;
+    background: #000000;
+    border-radius: 3vh;
+    left: 5vh;
+}
+
+
+.listsline1{
+    position: relative;
+    width: 35.4vh;
+    height: 0.5vh;
+    background: #000000ba;
+    border-radius: 5vh;
+}
+
+.listsline2{
+    position: relative;
+    width: 31vh;
+    height: 0.5vh;
+    background: #000000ba;
+    border-radius: 5vh;
+}
+
+.listsline3{
+    position: relative;
+    width: 29vh;
+    height: 0.5vh;
+    background: #000000ba;
+    border-radius: 5vh;
+}
+
+.listsline4{
+    position: relative;
+    width: 31vh;
+    height: 0.5vh;
+    background: #000000ba;
+    border-radius: 5vh;
+}
+
+.listsline5{
+    position: relative;
+    width: 35.4vh;
+    height: 0.5vh;
+    background: #000000ba;
+    border-radius: 5vh;
+}
+
+.circleimg{
+    position: absolute;
+}
+
+.blackcircle{
+    position: absolute;
+
+    background: #0e0e0efa;
+    width: 200px;
+    height: 100px; /* as the half of the width */
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 7px solid white;
+    border-bottom: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    left: -40px;
+      transform: rotate(90deg);
+
+}
+.blackcircle2{
+    position: absolute;
+
+    background: #0e0e0efa;
+    width: 200px;
+    height: 100px; /* as the half of the width */
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 7px solid white;
+    border-bottom: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    right: -39px;
+      transform: rotate(270deg);
+
+}
+.desccircle{
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    background: #0e0e0efa;
+    border-radius: 50%;
+    display: inline-block;
+    border: 4px solid #1998bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+
+}
+
+.closeline{
+    position: absolute;
+    width: 0.6vh;
+    height: 3.3vh;
+    background: #0e0e0efa;
+    bottom: -8vh;
+    border-radius: 7vh;
+    left: 4vh;
+    transform: rotate(-45deg);
+
+}
+
+.closebutton{
+    position: absolute;
+    width: 4vh;
+    height: 4vh;
+    background: #0e0e0efa;
+    bottom: -11.0vh;
+    border-radius: 4vh;
+    border: 4px solid #b61200da;
+    left: 3.7vh;
+    
+}
+
+.resetline{
+    position: absolute;
+    background: #0a0a0a;
+    width: 0.4vh;
+    height: 3vh;
+    bottom: 7vh;
+
+}
+
+
+.clothingdes{
+    position: relative;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: white;
+    font-weight: bold;
+}
+
+
+.custom-control, .custom-switch, .custom-control-input {
+    color: white
+}
+
+.resettbutton {
+    color:white;
+    font-size: 2vh;
+}
+
+.closebuttonn {
+    position: absolute;
+    bottom: 0.7vh;
+    left: 1.3vh;
+    color:white;
+    font-size: 2.4vh;
+}
+
+
+.clothingimage{
+    position: relative;
+    width: 4.75vh;
+}
+
+.circlebutton1{
+    position: absolute;
+    width: 11vh;
+    height: 17vh;
+    overflow: hidden;
+    left: 3.75vh;
+    z-index: 100;
+}
+
+.isnidecirclebutton1{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: rgba(14, 14, 14, 0.98);
+    border-radius: 50%;
+    right: 7vh;
+    top: 8px;
+    border: 4px solid rgba(0, 145, 182, 0.855);
+}
+
+
+.circlebutton2{
+    position: absolute;
+    width: 11vh;
+    height: 17vh;
+    overflow: hidden;
+    left: -14.25vh;
+    z-index: 100;
+}
+
+.isnidecirclebutton2{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: rgba(14, 14, 14, 0.98);
+    border-radius: 50%;
+    right: -11vh;
+    top: 8px;
+    border: 4px solid rgba(0, 145, 182, 0.855);
+}
+
+.circlebutton1:hover .isnidecirclebutton1{
+    border: 4px solid rgba(200, 200, 200, 0.855);
+}
+
+.circlebutton2:hover .isnidecirclebutton2{
+    border: 4px solid rgba(200, 200, 200, 0.855);
+}
+
+.criclebuttoning{
+    position: absolute;
+    height: 160px;
+    width: 142px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    right: 38.55vh;
+    top: 42.5vh;
+    z-index: 1000;
+    align-items: center;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.criclebuttonicon{
+    position: relative;
+    color: white;
+    font-size: 1.7vh;
+    pointer-events: none;
+}
+
+
+@keyframes refreshhud {
+	0% {
+		transform: rotate(0)
+	}
+	10% {
+		transform: rotate(40deg)
+	}
+	20% {
+		transform: rotate(80deg)
+	}
+	30% {
+		transform: rotate(120deg)
+	}
+	40% {
+		transform: rotate(160deg)
+	}
+	50% {
+		transform: rotate(200deg)
+	}
+	60% {
+		transform: rotate(240deg)
+	}
+	70% {
+		transform: rotate(280deg)
+	}
+	80% {
+		transform: rotate(320deg)
+	}
+
+}
+
+.f9onediv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.listofbuttonsx{
+    position: relative;
+    width: 106vh;
+    height: 43.5vh;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.buttnonslist{
+    position: relative;
+    height: 4vh;
+    width: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.onecbutton{
+    position: relative;
+    width: 4vh;
+    height: 4vh;
+    background: #000000e8;
+    border-radius: 4vh;
+    font-size: 1.5vh;
+    text-align: center;
+    line-height: 4vh;
+    color: white;
+    font-family: sans-serif;
+    outline: 2px solid white;
+    margin-right: 10px;
+    transform: rotate(-180deg);
+    overflow: hidden;
+}
+
+.onecbutton > img{
+    width: 95%;
+}
+
+.onecbutton:hover{
+    transform: rotate(-180deg) scale(1.12);
+}
+
+.listofhomebuttins{
+    position: relative;
+    width: 25%;
+    height: 101.65%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    z-index: 7;
+}

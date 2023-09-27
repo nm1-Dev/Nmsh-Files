@@ -1,0 +1,139 @@
+/*----------------------------*/
+/*---- BOII | DEVELOPMENT ----*/
+/*----------------------------*/
+
+body  {
+    background-color: none !important;
+    margin: auto;
+    font-family: 'Aldrich';
+}
+
+.hidden {
+    display: none !important;
+}
+
+#start-container {
+    position: absolute;
+    top: 39vh;
+    left: 38vw;
+    height: 16vh;
+    width: 25vw;
+    border: 5px solid rgba(31, 30, 30, 1);
+    border-radius: 25px;
+    background-color: black;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    text-shadow: 
+    0px 4px 3px rgba(0,0,0,0.6),
+    0px 8px 13px rgba(0,0,0,0.3),
+    0px 18px 23px rgba(0,0,0,0.3);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.progress-container .progress {
+    position: absolute;
+    left: 2.5vh;
+    height: 2.5vh;
+    width: 0;
+    border-radius: 25px;
+    background: rgba(77, 203, 194, 0.8);
+    transition: width 0.4s ease;
+}
+
+#game-container {
+    position: absolute;
+    top: 16vh;
+    left: 22vw;
+    height: 65vh;
+    width: 100vh;
+    border: 5px solid rgba(31, 30, 30, 1);
+    border-radius: 25px;
+    background-color: black;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#game-area {
+    position: fixed;
+    margin: 3vh;
+    border: transparent;
+    border-radius: 25px;
+    padding: 20px;
+    top: 17vh;
+    height: 43vh;
+    width: 90vh;
+    pointer-events: auto;
+}
+
+.wrapper {
+    position: relative;
+    height: 65vh;
+    width: 100vh;
+    background-color: transparent !important;
+    overflow: hidden;
+    pointer-events: none;
+    border-radius: 25px;
+}
+
+.shadow {
+    position: absolute;
+    width: 200vw;
+    height: 200vh;
+    left: 52.5%;
+    top: 52%;
+    transform: translateX(-50%) translateY(-50%);
+    background-image: radial-gradient(circle at center, transparent, #000 3%);
+    background-color: rgba(255, 255, 255, 0.2)
+}
+
+#chip {
+    font-size: 2rem;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: transparent !important;
+    background-color: transparent !important;
+    color: #4dcbc2
+}
+
+#info-container {
+    position: absolute;
+    top: 54.6vh;
+    left: 41vh;
+    height: 10vh;
+    width: 20vh;
+    background-color: rgba(31, 30, 30, 1);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: rgba(255,255,255,0.8);
+    text-shadow: 
+    0px 4px 3px rgba(0,0,0,0.6),
+    0px 8px 13px rgba(0,0,0,0.3),
+    0px 18px 23px rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 0.2vh;
+    font-size: 1rem;
+}
+
+#countdown-container {
+    position: absolute;
+    top: 60.5vh;
+    left: 1vh;
+    height: 2vh;
+    width: 15vw;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    text-shadow: 
+    0px 4px 3px rgba(0,0,0,0.6),
+    0px 8px 13px rgba(0,0,0,0.3),
+    0px 18px 23px rgba(0,0,0,0.3);
+    padding: 1vh;
+}
+
+#countdown {
+    position: absolute;
+    top: -1.5vh;
+}

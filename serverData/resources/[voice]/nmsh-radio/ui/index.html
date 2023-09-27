@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="radiolist"></div>
+        <div id="radio">
+            <img id="radioimage" src="images/default/off.png">
+            <button id="onoff" onclick="OnOff()"><span class="hovertext">Power</span></button>
+            <button id="volup" onclick="VolUp()"><span class="hovertext">Volume Up</span></button>
+            <button id="voldown" onclick="VolDown()"><span class="hovertext">Volume Down</span></button>
+            <button id="togmode" onclick="ToggleMode()"><span class="hovertext">Mode</span></button>
+            <div class="screeninfo">
+                <div id="curvolume">Volume: 50</div>
+                <div id="curchannel">Frequency: None</div>
+            </div>
+            <div class="screen-1">
+                <form id="freqform" display="block">
+                    <input id="channel" type="number" onchange="setTwoNumberDecimal()" name="channel" min="1" max="1000" step=".01" placeholder="0.00">
+                </form>
+            </div>
+            <div class="screen-2">
+                <form id="nameform">
+                    <input id="channel2" type="text" name="channel" minlength="3" maxlength="15" placeholder="Name">
+                </form>
+            </div>
+            <div class="screen-3">
+                <form id="callsignform">
+                    <input id="channel3" type="text" name="channel" minlength="1" maxlength="6" placeholder="Callsign">
+                </form>
+            </div>
+            <div class="screenchange">
+                <button onclick="ChangeFunc()">CHANGE</button>
+            </div>
+        </div>
+    </body>
+</html>

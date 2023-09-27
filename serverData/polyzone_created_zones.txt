@@ -1,0 +1,115 @@
+--Name: grovestreet | 2023-07-25T14:37:55Z
+BoxZone:Create(vector3(-89.45, -1793.17, 26.81), 3.7, 1.0, {
+  name="grovestreet",
+  heading=50,
+  --debugPoly=true,
+  minZ=25.81,
+  maxZ=29.21
+})
+
+--Name: test | 2023-07-25T14:41:50Z
+BoxZone:Create(vector3(-111.15, -1783.38, 29.84), 2.5, 0.5, {
+  name="test",
+  heading=320,
+  --debugPoly=true,
+  minZ=28.84,
+  maxZ=31.24
+})
+
+--Name: 1.0 | 2023-07-25T14:46:45Z
+BoxZone:Create(vector3(-93.48, -1794.68, 26.81), 3.75, 2.0, {
+  name="1.0",
+  heading=319,
+  --debugPoly=true,
+  minZ=25.81,
+  maxZ=28.61
+})
+
+--Name: 22 | 2023-07-25T14:50:23Z
+BoxZone:Create(vector3(-109.53, -1795.82, 26.81), 3.45, 1.0, {
+  name="22",
+  heading=50,
+  --debugPoly=true,
+  minZ=25.81,
+  maxZ=28.41
+})
+
+--Name: 454 | 2023-07-25T14:54:55Z
+BoxZone:Create(vector3(-97.71, -1792.43, 32.2), 2.4, 1.0, {
+  name="454",
+  heading=229,
+  --debugPoly=true,
+  minZ=31.2,
+  maxZ=33.6
+})
+
+--Name: nmsh | 2023-07-25T14:57:36Z
+BoxZone:Create(vector3(-113.84, -1796.04, 26.81), 4.0, 1.0, {
+  name="nmsh",
+  heading=320,
+  --debugPoly=true,
+  minZ=25.76,
+  maxZ=29.16
+})
+
+--Name: asds | 2023-07-30T20:08:17Z
+CircleZone:Create(vector3(-2037.03, -1493.98, 5.57), 2.6, {
+  name="asds",
+  useZ=true,
+  --debugPoly=true
+})
+
+--Name: ss | 2023-08-23T16:30:26Z
+BoxZone:Create(vector3(-69.06, 6249.42, 31.09), 2.0, 2.0, {
+  name="ss",
+  heading=35,
+  --debugPoly=true,
+  minZ=30.09,
+  maxZ=33.29
+})
+
+--Name: aa | 2023-08-23T16:56:26Z
+BoxZone:Create(vector3(-95.13, 6207.58, 31.03), 1.65, 1.0, {
+  name="aa",
+  heading=44,
+  --debugPoly=true,
+  minZ=30.03,
+  maxZ=32.63
+})
+
+--Name: aa | 2023-08-23T17:01:28Z
+BoxZone:Create(vector3(-87.09, 6226.04, 31.09), 1.7, 1.0, {
+  name="aa",
+  heading=32,
+  --debugPoly=true,
+  minZ=30.09,
+  maxZ=32.49
+})
+
+--Name: aa | 2023-08-23T17:04:02Z
+BoxZone:Create(vector3(-116.92, 6175.16, 31.02), 2.0, 2.0, {
+  name="aa",
+  heading=45,
+  --debugPoly=true,
+  minZ=30.02,
+  maxZ=33.42
+})
+
+--Name: sds | 2023-09-03T20:55:10Z
+BoxZone:Create(vector3(-170.48, -2658.99, 6.0), 5.4, 1.0, {
+  name="sds",
+  heading=0,
+  --debugPoly=true,
+  minZ=5.0,
+  maxZ=9.0
+})
+
+--Name: sds | 2023-09-06T14:57:51Z
+BoxZone:Create(vector3(440.98, -985.72, 34.97), 1.6, 1.0, {
+  name="sds",
+  heading=90,
+  --debugPoly=true,
+  minZ=33.97,
+  maxZ=36.57
+})
+

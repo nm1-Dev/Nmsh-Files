@@ -1,0 +1,1 @@
+C:\Users\Administrator\Desktop\ProjectNmsh\Artifacts\FXServer.exe +exec server.cfg +set onesync_enabled true

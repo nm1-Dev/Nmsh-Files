@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nmsh Dispatch</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link href="script.js">
+      <script src="https://kit.fontawesome.com/8b624c5701.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css">
+      <script src="policelist.js" type="text/javascript" async></script>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+         crossorigin=""/>
+      <!-- Make sure you put this AFTER Leaflet's CSS -->
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+         crossorigin=""></script>
+   </head>
+   <body>
+      <div class="background">
+         <div class="main-app-container">
+            <div class="main-container-back">
+               <div class="dispatch-main main-dispatch">
+                  <div class="dispatch-inside" style="display: none;">
+                     <div class="map-container">
+                        <div id="dispatch-map-container" class="jss11218 leaflet-main leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative;">
+                           <div class="leaflet-control-container">
+                              <div class="leaflet-top leaflet-left">
+                                 <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out leaflet-disabled" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div>
+                              </div>
+                              <div class="leaflet-top leaflet-right"></div>
+                              <div class="leaflet-bottom leaflet-left"></div>
+                              <div class="leaflet-bottom leaflet-right">
+                                 <div class="leaflet-control-attribution leaflet-control"><a href="" title="A JS library for interactive maps"></a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="notify-container">
+                        <div class="marked-notify-container">
+                           <div class="marked-notify-main">
+
+                           </div>
+                        </div>
+                        <div class="unmarked-notify-container">
+                           <div class="notify-main-container">
+                              <div class="notify-main-container-inner dispatch-menu">
+                              </div>
+                           </div>
+                           <div class="mesai-container">
+                              <div class="mesai-container-main" style="width: 100%;">
+                                 <p class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary" style="word-break: break-word;">Police</p>
+                                 <div class="mesai-allah-yok">
+                                    
+                                 </div>
+                              </div>
+                              <!-- <div class="mesai-container-ems">
+                              </div> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="unmarked-notify-container out-dispatch-notifys" style="display: block;">
+                     <div class="notify-main-container">
+                        <div class="notify-main-container-inner">
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <div role="presentation" class="MuiPopover-root charges-menu" id="menu-" style="position: fixed; z-index: 1900; inset: 0px; display: none;">
+         <div class="menu-close-click" aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"></div>
+         <div tabindex="0" data-test="sentinelStart"></div>
+         <div class="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded" tabindex="-1" style="opacity: 1; transform: none; transition: opacity 267ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 178ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; top: 447px; left: 1345px; transform-origin: 0px 26px;">
+            <ul class="MuiList-root MuiMenu-list MuiList-padding police-list" role="listbox" tabindex="-1">
+            </ul>
+         </div>
+         <div tabindex="0" data-test="sentinelEnd"></div>
+      </div>
+      <div role="presentation" class="MuiPopover-root remove-list" id="menu-" style="position: fixed; z-index: 1900; inset: 0px; display: none;">
+         <div class="menu-close-click" aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"></div>
+         <div tabindex="0" data-test="sentinelStart"></div>
+         <div class="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded" tabindex="-1" style="opacity: 1; transform: none; transition: opacity 267ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 178ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; top: 447px; left: 1345px; transform-origin: 0px 26px;">
+            <ul class="MuiList-root MuiMenu-list MuiList-padding" role="listbox" tabindex="-1">
+               <li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button remove-unit" tabindex="-1" role="option" aria-disabled="false" data-value="10">Remove From Unit<span class="MuiTouchRipple-root"></span></li>
+            </ul>
+         </div>
+         <div tabindex="0" data-test="sentinelEnd"></div>
+      </div>
+      
+      <div role="presentation" class="MuiPopover-root assign-list" id="menu-" style="position: fixed; z-index: 1900; inset: 0px; display: none;">
+         <div class="asssing-close-click" aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"></div>
+         <div tabindex="0" data-test="sentinelStart"></div>
+         <div class="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded" tabindex="-1" style="opacity: 1; transform: none; transition: opacity 267ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 178ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; top: 447px; left: 1345px; transform-origin: 0px 26px;">
+            <ul class="MuiList-root MuiMenu-list MuiList-padding" role="listbox" tabindex="-1">
+               <li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button set-gps-location" tabindex="-1" role="option" aria-disabled="false" data-value="10">Set GPS Location<span class="MuiTouchRipple-root"></span></li>
+               <li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button create-call" tabindex="-1" role="option" aria-disabled="false" data-value="10">Create Call<span class="MuiTouchRipple-root"></span></li>
+               <li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button dismiss-ping" tabindex="-1" role="option" aria-disabled="false" data-value="10">Dismiss Ping (From Map/List)<span class="MuiTouchRipple-root"></span></li>
+            </ul>
+         </div>
+         <div tabindex="0" data-test="sentinelEnd"></div>
+      </div>
+      <div role="presentation" class="MuiPopover-root called-list" id="menu-" style="position: fixed; z-index: 1900; inset: 0px; display: none;">
+         <div class="asssing-close-click" aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"></div>
+         <div tabindex="0" data-test="sentinelStart"></div>
+         <div class="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded" tabindex="-1" style="opacity: 1; transform: none; transition: opacity 267ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 178ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; top: 447px; left: 1345px; transform-origin: 0px 26px;">
+            <ul class="MuiList-root MuiMenu-list MuiList-padding called-list-inner" role="listbox" tabindex="-1">
+            </ul>
+         </div>
+         <div tabindex="0" data-test="sentinelEnd"></div>
+      </div>
+      <div role="presentation" class="MuiPopover-root dismiss-list" id="menu-" style="position: fixed; z-index: 1900; inset: 0px; display: none;">
+         <div class="asssing-close-click" aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"></div>
+         <div tabindex="0" data-test="sentinelStart"></div>
+         <div class="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded" tabindex="-1" style="opacity: 1; transform: none; transition: opacity 267ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 178ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; top: 447px; left: 1345px; transform-origin: 0px 26px;">
+            <ul class="MuiList-root MuiMenu-list MuiList-padding" role="listbox" tabindex="-1">
+               <li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button crate-dismiss" tabindex="-1" role="option" aria-disabled="false" data-value="10">Create Call<span class="MuiTouchRipple-root"></span></li>
+               <li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button remove-dismis-ping" tabindex="-1" role="option" aria-disabled="false" data-value="10">Remove Ping (From Map/List)<span class="MuiTouchRipple-root"></span></li>
+            </ul>
+         </div>
+         <div tabindex="0" data-test="sentinelEnd"></div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>

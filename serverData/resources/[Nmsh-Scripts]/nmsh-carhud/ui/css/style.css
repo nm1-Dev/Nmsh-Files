@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Chivo Mono", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  display: none;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+main .stats {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+main .stats .logo {
+  padding-right: 25px;
+}
+main .stats .logo img {
+  max-height: 75px;
+  max-width: 150px;
+}
+main .stats .other {
+  padding-left: 10px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 20%, rgba(255, 255, 255, 0.4) 100%);
+  height: 50px;
+  width: 200px;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+main .stats .other .top, main .stats .other .bottom {
+  width: 100%;
+  display: flex;
+}
+main .stats .other .top .id, main .stats .other .top .ping, main .stats .other .top .cash, main .stats .other .top .bank, main .stats .other .bottom .id, main .stats .other .bottom .ping, main .stats .other .bottom .cash, main .stats .other .bottom .bank {
+  width: 50%;
+}
+main .stats .other::before {
+  content: "";
+  height: 1px;
+  width: 200px;
+  position: absolute;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 20%, rgba(255, 255, 255, 0.4) 100%);
+  top: 0;
+  right: 0;
+}
+main .stats .other::after {
+  content: "";
+  height: 1px;
+  width: 200px;
+  position: absolute;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 20%, rgba(255, 255, 255, 0.4) 100%);
+  bottom: 0;
+  right: 0;
+}
+main .status {
+  position: absolute;
+  width: 350px;
+  height: 230px;
+  left: 25px;
+  bottom: 25px;
+  color: #fff;
+}
+main .status .map-outline {
+  width: 270px;
+  height: 180px;
+  border: 1px solid rgba(255, 255, 255, 0.2352941176);
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.2352941176), 0 0 5px 1px rgba(255, 255, 255, 0.2352941176) inset;
+  position: absolute;
+  left: 5px;
+  bottom: 10px;
+}
+main .status .status-wrapper {
+  width: 40px;
+  height: 190px;
+  position: absolute;
+  bottom: 10px;
+  left: 15vw;
+  transition: left 0.4s, top 0.4s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: end;
+}
+main .status .status-wrapper .health-wrapper {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4705882353), 0 0 5px 1px rgba(255, 255, 255, 0.4705882353) inset;
+}
+main .status .status-wrapper .health-wrapper .health {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-image: conic-gradient(#fff 64%, transparent 17%, transparent);
+  border-radius: 50%;
+}
+main .status .status-wrapper .health-wrapper .health img {
+  width: 20px;
+}
+main .status .status-wrapper .armour-wrapper {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4705882353), 0 0 5px 1px rgba(255, 255, 255, 0.4705882353) inset;
+}
+main .status .status-wrapper .armour-wrapper .armour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-image: conic-gradient(#fff 64%, transparent 17%, transparent);
+  border-radius: 50%;
+}
+main .status .status-wrapper .armour-wrapper .armour img {
+  width: 18px;
+}
+main .status .status-wrapper .hunger-wrapper {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4705882353), 0 0 5px 1px rgba(255, 255, 255, 0.4705882353) inset;
+}
+main .status .status-wrapper .hunger-wrapper .hunger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-image: conic-gradient(#fff 64%, transparent 17%, transparent);
+  border-radius: 50%;
+}
+main .status .status-wrapper .hunger-wrapper .hunger img {
+  width: 16px;
+}
+main .status .status-wrapper .thirst-wrapper {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4705882353), 0 0 5px 1px rgba(255, 255, 255, 0.4705882353) inset;
+}
+main .status .status-wrapper .thirst-wrapper .thirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-image: conic-gradient(#fff 64%, transparent 17%, transparent);
+  border-radius: 50%;
+}
+main .status .status-wrapper .thirst-wrapper .thirst img {
+  width: 16px;
+}
+main .status .status-wrapper .stamina-wrapper {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4705882353), 0 0 5px 1px rgba(255, 255, 255, 0.4705882353) inset;
+}
+main .status .status-wrapper .stamina-wrapper .stamina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-image: conic-gradient(#fff 64%, transparent 17%, transparent);
+  border-radius: 50%;
+}
+main .status .status-wrapper .stamina-wrapper .stamina img {
+  width: 18px;
+}
+main .status .status-wrapper .oxygen-wrapper {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4705882353), 0 0 5px 1px rgba(255, 255, 255, 0.4705882353) inset;
+}
+main .status .status-wrapper .oxygen-wrapper .oxygen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-image: conic-gradient(#fff 64%, transparent 17%, transparent);
+  border-radius: 50%;
+}
+main .status .status-wrapper .oxygen-wrapper .oxygen img {
+  width: 18px;
+}
+main .status .location {
+  bottom: 19vh;
+  left: 0;
+  transition: left 0.4s, bottom 0.4s;
+  position: absolute;
+  display: flex;
+  gap: 5px;
+}
+main .status span {
+  font-family: "Poppins", sans-serif;
+}
+main .status img {
+  width: 25px;
+}
+main .carhud {
+  display: none;
+  position: absolute;
+  right: 35px;
+  bottom: 35px;
+  width: 310px;
+  color: #fff;
+  transition: right 0.5s;
+}
+main .carhud .other-wrapper {
+  margin-left: 8px;
+}
+main .carhud .other-wrapper .speed-unit {
+  font-family: "Poppins", sans-serif;
+  font-size: 52px;
+  opacity: 0.4;
+  font-weight: 700;
+  height: 55px;
+  width: 120px;
+}
+main .carhud .other-wrapper .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  margin-top: 10px;
+}
+main .carhud .other-wrapper .icons img {
+  width: 22px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+main .carhud .other-wrapper .icons .belt, main .carhud .other-wrapper .icons .cruise {
+  opacity: 0.3;
+}
+main .carhud .other-wrapper .icons .fuel-bar-wrapper {
+  height: 20px;
+  display: flex;
+  align-items: end;
+  gap: 2px;
+  position: relative;
+}
+main .carhud .other-wrapper .icons .fuel-bar-wrapper .fuel-bar {
+  width: 5px;
+  height: 50%;
+  background-color: #fff;
+  border-radius: 1px;
+  transition: height 0.2s;
+  opacity: 0.8;
+}
+main .carhud .other-wrapper .icons .fuel-bar-wrapper img {
+  width: 18px;
+}
+main .carhud .speed {
+  font-size: 100px;
+  font-weight: 600;
+  width: 180px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+main .carhud .rpm {
+  width: 180px;
+  height: 5px;
+  border-right: 2px solid #fff;
+  position: relative;
+}
+main .carhud .rpm .rpm-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 5px;
+  background-color: #fff;
+  transition: width 0.2s;
+}
+main .voicehud {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: opacity 0.3s;
+}
+main .voicehud .voice {
+  display: flex;
+  gap: 3px;
+}
+main .voicehud .voice span {
+  border-radius: 5px;
+  width: 13px;
+  height: 4px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  display: block;
+}
+main .voicehud .voice span:last-child {
+  background: none;
+}
+main .voicehud img {
+  width: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,3 @@
+-- Add your script code here. This can't be dumped by the cheater!!!!!
+-- Warning: `onStartResource` and `onStopResource` events will not be called in this file.
+-- Note: if your code has any errors in the runtime, it will print the full code on the client side, so make sure that your script has no errors.

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+    /*     font-family: 'Montserrat', sans-serif; */
+    overflow: hidden;
+    /* display: none; */
+    font-style: normal;
+    font-weight: 600;
+    /* font-family: 'Mukta', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); */
+    font-variant: small-caps;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.dispatch-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+}
+
+.dispatch-holder {
+    width: 50vh;
+    height: 87.5vh;
+    margin: auto;
+    margin-top: 9.75vh;
+    margin-right: 0vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.dispatch-item {
+/*     -webkit-text-stroke: 0.1mm black; */
+    background-image: url('https://cdn.discordapp.com/attachments/1021510724754878484/1043206485620043777/imageedit_6_2893157692.png');
+    background-size: 28px;
+    background-repeat: no-repeat;
+    /*     background-position-x: right;
+    background-position-y: top; */
+    background-position: right 2% bottom 92%;
+    /*     border-radius: 5px; */
+    margin: auto;
+    margin-top: 0vh;
+    margin-right: 1vh;
+    margin-bottom: .5vh;
+    background-color: #0f3f631e;
+    border-right: .75vh solid rgb(32, 120, 206);
+    min-width: 45.5vh;
+    width: fit-content;
+    height: fit-content;
+    /* border-bottom-left-radius: 1vh;
+    border-top-left-radius: 1vh; 
+    display: flex;
+    flex-direction: column;
+/*     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: var(--dark-blue);
+    border-right: 5px solid #2e83d5; */
+}
+
+.dispatch-item-true {
+    background-color: #0f3f63ec;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); */
+    font-variant: small-caps;
+}
+
+.dispatch-item-false {
+    background-color: rgba(119, 20, 20, 0.911);
+    border-right: .75vh solid rgb(255, 0, 0);
+}
+
+.dispatch-item-officer {
+    background-color: rgb(97, 3, 11);
+}
+
+.top-info-holder {
+    scale: 0.5px;
+    width: 95%;
+    height: fit-content;
+    margin: unset;
+    margin-top: .75vh;
+    margin-left: .75vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 1vh;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.call-id {
+    background-color: #93f167;
+    padding: .35vh;
+    padding-bottom: .4vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0vh;
+    margin-right: .4vh;
+    border-radius: 1vh;
+    text-align: center;
+    color: black;
+    font-weight: 150;
+}
+
+.call-code {
+    background-color: #097C95;
+    padding: .35vh;
+    padding-bottom: .4vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0vh;
+    margin-right: .5vh;
+    border-radius: 1vh;
+    text-align: center;
+}
+
+.call-name {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0vh;
+    margin-right: auto;
+    border-radius: 1vh;
+    text-align: left;
+    font-size: 1.7vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bottom-info-holder {
+    -webkit-text-stroke: 0.01mm black;
+    width: 95%;
+    height: fit-content;
+    margin: auto;
+    margin-top: .75vh;
+    margin-bottom: .6vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.2vh;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.call-bottom-info {
+    margin: auto;
+    margin-left: 0vh;
+    margin-bottom: .5vh;
+    text-align: left;
+    overflow: wrap;
+    white-space: normal;
+}
+
+.line {
+    background-color: rgb(32, 120, 206);
+    height: 0.05vh;
+    width: 100%;
+    margin-top: 0.1vh;
+    margin-bottom: 0.1vh
+}
+
+.call-bottom-information {
+    margin-top: 0.5vh;
+}
+
+.fas {
+    margin-right: .5vh;
+}
+
+.fab {
+    margin-right: .5vh;
+}
+
+.far {
+    margin-right: .5vh;
+}
+
+.fab {
+    margin-right: .5vh;
+}
+
+.priority-1 {
+    background: linear-gradient(270deg, #b70000, #0a24b0);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+    background-color: #097b9500;
+}
+
+.priority-2 {
+    background-color: #f79758;
+    color: black;
+    font-weight: 150;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}

@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Bebas Nue";
+    src: url("./fonts/BebasNeuePro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Bebas Nue";
+    src: url("./fonts/BebasNeuePro-Thin.ttf") format("truetype");
+	font-weight: 100;
+}
+
+@font-face {
+    font-family: "Bebas Nue";
+    src: url("./fonts/BebasNeuePro-Light.ttf") format("truetype");
+	font-weight: 200;
+}
+
+@font-face {
+    font-family: "Bebas Nue";
+    src: url("./fonts/BebasNeuePro-Middle.ttf") format("truetype");
+	font-weight: 300;
+}
+
+@font-face {
+    font-family: "Bebas Nue";
+    src: url("./fonts/BebasNeuePro-Italic.ttf") format("truetype");
+	font-style: italic;
+}
+
+@font-face {
+    font-family: "Bebas Nue";
+    src: url("./fonts/BebasNeuePro-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+
+html {
+	font-family:Bebas Nue;
+	background:transparent;
+}
+
+body {
+	background:url('../images/background.png') center center no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	z-index:9999;
+}
+
+#wrap {	
+	background:url('../images/modal-bg.png') center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	font-family:Bebas Nue;
+	top: 50%;
+	left:50%;
+	width: 30vw;
+	height: 34vw; 
+	padding:6vw 3vw;
+    transform: translate(-50%, -50%);
+	position:absolute;
+	color: rgba(255, 255, 255, 1);
+	animation:fadeIn 3s 1;
+}
+
+
+/* -- DIALOG POP UP WRAP -- */
+
+#dialog-wrap {
+	font-size:1.2vw;
+	color: #fff;
+	text-shadow: 0 0 1vw rgba(0,0,0,0.5);
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing:0.1vw;
+	
+}
+
+#dialog-title {
+	font-size:2vw;
+	line-height:2.2vw;
+	font-weight:600;
+	color:rgba(255,255,255,1);
+}
+
+#dialog-description {
+	font-size:1.1vw;
+	font-weight:300;
+	color:rgba(255,255,255,0.9);
+}
+
+#dialog-price-text {
+	font-size:1.1vw;
+	font-weight:300;
+	color:rgba(255,255,255,0.9);
+}
+
+#price {
+	color:rgba(255,220,40,1);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number], input[type=text] {
+    -moz-appearance: textfield;
+}
+
+.dialog-input-design {
+	background: rgba(8, 19, 22, 0.8);
+	color:rgba(255,255,255,1);
+	border: none;
+    outline: none;
+    font-size: 1.2vw;
+    line-height: 2vw;
+	width: 70%;
+    height: 4vw;
+    text-align: center;
+    border-radius: 0.3vw;
+    cursor: pointer;
+}
+
+#btn {
+	background:rgba(255,255,255, 0.15);
+	border:0.1vw solid rgba(255,255,255, 0.1);
+	font-size:1.2vw;
+	border-radius:0.2vw;
+	padding:0.8vw 1.6vw;
+	transition:0.2s;
+	cursor:pointer;
+	color: #fff;
+	text-transform:uppercase;
+}
+
+#btn:hover {
+	background:#ff4242;
+	color:#fff;
+	border:0.1vw solid #ff4242;
+	box-shadow: 0 0 4vw rgba(255,0,0,0.4);
+}
+
+#btn-important {
+	background:rgba(255,220,40,1);
+	border:0.1vw solid rgba(255,255,255, 0.1);
+	font-size:1.2vw;
+	font-weight:600;
+	border-radius:0.2vw;
+	padding:0.8vw 1.6vw;
+	transition:0.2s;
+	cursor:pointer;
+	color: rgba(20,30,50,1);
+	text-transform:uppercase;
+}
+
+#btn-important:hover {
+	background:rgba(255,220,60,1);
+	border:0.1vw solid rgba(255,220,60,1);
+	box-shadow: 0 0 4vw rgba(255,220,40,0.4);
+}
+
+.progress-bar {
+    width: calc(100% - 31vw);
+    height: 0.6vw;
+    background: rgba(0,0,0,0.4);
+    margin:0.5vw auto;
+    border-radius: 0.5vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.4);
+}
+
+.progress-bar-fill {
+    display: block;
+	width:0%;
+    height: 0.6vw;
+    background: rgba(255,255,255,1);
+    border-radius: 0.5vw;
+}

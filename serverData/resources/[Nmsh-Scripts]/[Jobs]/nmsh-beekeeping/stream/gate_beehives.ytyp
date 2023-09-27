@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CMapTypes>
+  <extensions/>
+  <archetypes>
+    <Item type="CBaseArchetypeDef">
+      <lodDist value="101.57400000"/>
+      <flags value="131072"/>
+      <specialAttribute value="0"/>
+      <bbMin x="-0.53874700" y="-0.60000000" z="0.00000000"/>
+      <bbMax x="0.53874700" y="0.53877300" z="1.39509000"/>
+      <bsCentre x="0.00000024" y="-0.03061350" z="0.69754300"/>
+      <bsRadius value="1.04929000"/>
+      <hdTextureDist value="76.18049000"/>
+      <name>gate_beehive</name>
+      <textureDictionary>gate_beehives</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>gate_beehive</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>gate_beehive</assetName>
+      <extensions>
+        <Item type="CExtensionDefParticleEffect">
+          <name>gate_beehive</name>
+          <offsetPosition x="0.00000000" y="-0.60000000" z="0.27300000"/>
+          <offsetRotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <fxName>amb_fly_swarm</fxName>
+          <fxType value="0"/>
+          <boneTag value="0"/>
+          <scale value="1.00000000"/>
+          <probability value="100"/>
+          <flags value="0"/>
+          <color value="0xFFFFFFFF"/>
+        </Item>
+        <Item type="CExtensionDefParticleEffect">
+          <name>gate_beehive</name>
+          <offsetPosition x="0.00000000" y="-0.60000000" z="0.37300000"/>
+          <offsetRotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <fxName>amb_fly_swarm</fxName>
+          <fxType value="0"/>
+          <boneTag value="0"/>
+          <scale value="1.00000000"/>
+          <probability value="100"/>
+          <flags value="0"/>
+          <color value="0xFFFFFFFF"/>
+        </Item>
+        <Item type="CExtensionDefParticleEffect">
+          <name>gate_beehive</name>
+          <offsetPosition x="0.00000000" y="-0.60000000" z="0.47300000"/>
+          <offsetRotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <fxName>amb_fly_swarm</fxName>
+          <fxType value="0"/>
+          <boneTag value="0"/>
+          <scale value="1.00000000"/>
+          <probability value="100"/>
+          <flags value="0"/>
+          <color value="0xFFFFFFFF"/>
+        </Item>
+        <Item type="CExtensionDefParticleEffect">
+          <name>gate_beehive</name>
+          <offsetPosition x="0.00000000" y="-0.60000000" z="0.57300000"/>
+          <offsetRotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <fxName>amb_fly_swarm</fxName>
+          <fxType value="0"/>
+          <boneTag value="0"/>
+          <scale value="1.00000000"/>
+          <probability value="100"/>
+          <flags value="0"/>
+          <color value="0xFFFFFFFF"/>
+        </Item>
+      </extensions>
+    </Item>
+    <Item type="CBaseArchetypeDef">
+      <lodDist value="101.79900000"/>
+      <flags value="131072"/>
+      <specialAttribute value="0"/>
+      <bbMin x="-0.53874700" y="-0.60000000" z="0.00000000"/>
+      <bbMax x="0.53874700" y="0.53877300" z="1.81509000"/>
+      <bsCentre x="0.00000024" y="-0.03061350" z="0.90754300"/>
+      <bsRadius value="1.19920000"/>
+      <hdTextureDist value="76.34910000"/>
+      <name>gate_beehive02</name>
+      <textureDictionary>gate_beehives</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>gate_beehive02</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>gate_beehive02</assetName>
+      <extensions>
+        <Item type="CExtensionDefParticleEffect">
+          <name>gate_beehive02</name>
+          <offsetPosition x="0.00000000" y="-0.60000000" z="0.27300000"/>
+          <offsetRotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <fxName>amb_fly_swarm</fxName>
+          <fxType value="0"/>
+          <boneTag value="0"/>
+          <scale value="1.00000000"/>
+          <probability value="100"/>
+          <flags value="0"/>
+          <color value="0xFFFFFFFF"/>
+        </Item>
+        <Item type="CExtensionDefParticleEffect">
+          <name>gate_beehive02</name>
+          <offsetPosition x="0.00000000" y="-0.60000000" z="0.37300000"/>
+          <offsetRotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <fxName>amb_fly_swarm</fxName>
+          <fxType value="0"/>
+          <boneTag value="0"/>
+          <scale value="1.00000000"/>
+          <probability value="100"/>
+          <flags value="0"/>
+          <color value="0xFFFFFFFF"/>
+        </Item>
+        <Item type="CExtensionDefParticleEffect">
+          <name>gate_beehive02</name>
+          <offsetPosition x="0.00000000" y="-0.60000000" z="0.47300000"/>
+          <offsetRotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <fxName>amb_fly_swarm</fxName>
+          <fxType value="0"/>
+          <boneTag value="0"/>
+          <scale value="1.00000000"/>
+          <probability value="100"/>
+          <flags value="0"/>
+          <color value="0xFFFFFFFF"/>
+        </Item>
+        <Item type="CExtensionDefParticleEffect">
+          <name>gate_beehive02</name>
+          <offsetPosition x="0.00000000" y="-0.60000000" z="0.57300000"/>
+          <offsetRotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <fxName>amb_fly_swarm</fxName>
+          <fxType value="0"/>
+          <boneTag value="0"/>
+          <scale value="1.00000000"/>
+          <probability value="100"/>
+          <flags value="0"/>
+          <color value="0xFFFFFFFF"/>
+        </Item>
+      </extensions>
+    </Item>
+    <Item type="CBaseArchetypeDef">
+      <lodDist value="101.71300000"/>
+      <flags value="131072"/>
+      <specialAttribute value="0"/>
+      <bbMin x="-0.50300300" y="-0.69547400" z="-0.00000018"/>
+      <bbMax x="0.85138800" y="0.53874900" z="1.36335000"/>
+      <bsCentre x="0.17419200" y="-0.07836250" z="0.68167600"/>
+      <bsRadius value="1.14197000"/>
+      <hdTextureDist value="76.28470000"/>
+      <name>gate_beehive03</name>
+      <textureDictionary>gate_beehives</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>gate_beehive03</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>gate_beehive03</assetName>
+      <extensions>
+        <Item type="CExtensionDefParticleEffect">
+          <name>gate_beehive03</name>
+          <offsetPosition x="0.00000000" y="-0.60000000" z="0.27300000"/>
+          <offsetRotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <fxName>amb_fly_swarm</fxName>
+          <fxType value="0"/>
+          <boneTag value="0"/>
+          <scale value="1.00000000"/>
+          <probability value="100"/>
+          <flags value="0"/>
+          <color value="0xFFFFFFFF"/>
+        </Item>
+        <Item type="CExtensionDefParticleEffect">
+          <name>gate_beehive03</name>
+          <offsetPosition x="0.00000000" y="-0.60000000" z="0.37300000"/>
+          <offsetRotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <fxName>amb_fly_swarm</fxName>
+          <fxType value="0"/>
+          <boneTag value="0"/>
+          <scale value="1.00000000"/>
+          <probability value="100"/>
+          <flags value="0"/>
+          <color value="0xFFFFFFFF"/>
+        </Item>
+        <Item type="CExtensionDefParticleEffect">
+          <name>gate_beehive03</name>
+          <offsetPosition x="0.00000000" y="-0.60000000" z="0.47300000"/>
+          <offsetRotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <fxName>amb_fly_swarm</fxName>
+          <fxType value="0"/>
+          <boneTag value="0"/>
+          <scale value="1.00000000"/>
+          <probability value="100"/>
+          <flags value="0"/>
+          <color value="0xFFFFFFFF"/>
+        </Item>
+        <Item type="CExtensionDefParticleEffect">
+          <name>gate_beehive03</name>
+          <offsetPosition x="0.00000000" y="-0.60000000" z="0.57300000"/>
+          <offsetRotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <fxName>amb_fly_swarm</fxName>
+          <fxType value="0"/>
+          <boneTag value="0"/>
+          <scale value="1.00000000"/>
+          <probability value="100"/>
+          <flags value="0"/>
+          <color value="0xFFFFFFFF"/>
+        </Item>
+        <Item type="CExtensionDefParticleEffect">
+          <name>gate_beehive03</name>
+          <offsetPosition x="0.00000000" y="0.00000000" z="0.00000000"/>
+          <offsetRotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <fxName>amb_fly_swarm</fxName>
+          <fxType value="0"/>
+          <boneTag value="0"/>
+          <scale value="1.00000000"/>
+          <probability value="100"/>
+          <flags value="0"/>
+          <color value="0xFFFFFFFF"/>
+        </Item>
+      </extensions>
+    </Item>
+  </archetypes>
+  <name>gate_beehives</name>
+  <dependencies/>
+  <compositeEntityTypes/>
+</CMapTypes>

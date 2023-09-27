@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CMapData>
+  <name>0xDD03DF0B</name>
+  <parent/>
+  <flags value="0"/>
+  <contentFlags value="1"/>
+  <streamingExtentsMin x="1085.78500000" y="1915.97300000" z="-102.97090000"/>
+  <streamingExtentsMax x="1650.88300000" y="2481.06300000" z="298.52660000"/>
+  <entitiesExtentsMin x="1365.35700000" y="2194.08400000" z="97.02907000"/>
+  <entitiesExtentsMax x="1371.06900000" y="2199.66200000" z="98.52661000"/>
+  <entities>
+    <Item type="CEntityDef">
+      <archetypeName>gate_beehive02</archetypeName>
+      <flags value="32"/>
+      <guid value="0"/>
+      <position x="1367.17500000" y="2196.66700000" z="96.12030000"/>
+      <rotation x="0.00000000" y="0.00000000" z="-0.50000000" w="0.86602540"/>
+      <scaleXY value="1.00000000"/>
+      <scaleZ value="1.00000000"/>
+      <parentIndex value="-1"/>
+      <lodDist value="200.00000000"/>
+      <childLodDist value="0.00000000"/>
+      <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+      <numChildren value="0"/>
+      <priorityLevel>PRI_REQUIRED</priorityLevel>
+      <extensions/>
+      <ambientOcclusionMultiplier value="255"/>
+      <artificialAmbientOcclusion value="255"/>
+      <tintValue value="0"/>
+    </Item>
+    <Item type="CEntityDef">
+      <archetypeName>gate_beehive03</archetypeName>
+      <flags value="32"/>
+      <guid value="0"/>
+      <position x="1366.07300000" y="2194.82600000" z="96.17311000"/>
+      <rotation x="0.00000000" y="0.00000000" z="-0.53729960" w="0.84339140"/>
+      <scaleXY value="1.00000000"/>
+      <scaleZ value="1.00000000"/>
+      <parentIndex value="-1"/>
+      <lodDist value="200.00000000"/>
+      <childLodDist value="0.00000000"/>
+      <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+      <numChildren value="0"/>
+      <priorityLevel>PRI_REQUIRED</priorityLevel>
+      <extensions/>
+      <ambientOcclusionMultiplier value="255"/>
+      <artificialAmbientOcclusion value="255"/>
+      <tintValue value="0"/>
+    </Item>
+    <Item type="CEntityDef">
+      <archetypeName>gate_beehive</archetypeName>
+      <flags value="32"/>
+      <guid value="0"/>
+      <position x="1368.31000000" y="2198.53800000" z="96.12983000"/>
+      <rotation x="0.00000000" y="0.00000000" z="-0.42261830" w="0.90630780"/>
+      <scaleXY value="1.00000000"/>
+      <scaleZ value="1.00000000"/>
+      <parentIndex value="-1"/>
+      <lodDist value="200.00000000"/>
+      <childLodDist value="0.00000000"/>
+      <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+      <numChildren value="0"/>
+      <priorityLevel>PRI_REQUIRED</priorityLevel>
+      <extensions/>
+      <ambientOcclusionMultiplier value="255"/>
+      <artificialAmbientOcclusion value="255"/>
+      <tintValue value="0"/>
+    </Item>
+    <Item type="CEntityDef">
+      <archetypeName>gate_beehive02</archetypeName>
+      <flags value="32"/>
+      <guid value="0"/>
+      <position x="1370.53000000" y="2199.12300000" z="96.21386000"/>
+      <rotation x="0.00000000" y="0.00000000" z="-0.00000006" w="1.00000000"/>
+      <scaleXY value="1.00000000"/>
+      <scaleZ value="1.00000000"/>
+      <parentIndex value="-1"/>
+      <lodDist value="200.00000000"/>
+      <childLodDist value="0.00000000"/>
+      <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+      <numChildren value="0"/>
+      <priorityLevel>PRI_REQUIRED</priorityLevel>
+      <extensions/>
+      <ambientOcclusionMultiplier value="255"/>
+      <artificialAmbientOcclusion value="255"/>
+      <tintValue value="0"/>
+    </Item>
+  </entities>
+  <containerLods/>
+  <boxOccluders/>
+  <occludeModels/>
+  <physicsDictionaries/>
+  <instancedData>
+    <ImapLink/>
+    <PropInstanceList/>
+    <GrassInstanceList/>
+  </instancedData>
+  <timeCycleModifiers/>
+  <carGenerators/>
+  <LODLightsSOA>
+    <direction/>
+    <falloff/>
+    <falloffExponent/>
+    <timeAndStateFlags/>
+    <hash/>
+    <coneInnerAngle/>
+    <coneOuterAngleOrCapExt/>
+    <coronaIntensity/>
+  </LODLightsSOA>
+  <DistantLODLightsSOA>
+    <position/>
+    <RGBI/>
+    <numStreetLights value="0"/>
+    <category value="0"/>
+  </DistantLODLightsSOA>
+  <block>
+    <version value="0"/>
+    <flags value="0"/>
+    <name>beehives</name>
+    <exportedBy>CodeWalker</exportedBy>
+    <owner/>
+    <time>10 July 2021 23.13</time>
+  </block>
+</CMapData>

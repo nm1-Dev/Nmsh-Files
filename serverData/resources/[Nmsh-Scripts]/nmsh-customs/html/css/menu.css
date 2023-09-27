@@ -1,0 +1,128 @@
+/*
+* Import Fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/*
+* General Styles
+*/
+
+#menu_container
+{
+    margin-top: 15px;
+    margin-left: 15px;
+
+    display: flex;
+    flex-flow: column wrap;
+
+    background-color: rgb(23 23 23 / 80%);
+    /*border: 2px solid rgb(236, 240, 241);*/
+
+    width: 47vh;
+    max-height: 78vh;
+    
+    border-radius: 1.2vh;
+}
+
+#menu_heading
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 18pt;
+    font-weight: 400;
+    color: rgb(236, 240, 241);
+    background-color: #dc143c;
+    border-radius: .6vh;
+    margin: 1vh;
+    padding: .5vh .5vh .5vh .5vh;
+    width: 44vh;
+}
+
+#menu_subheading
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: 300;
+    color: #171717;
+    background-color: #ededed;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+    width: 45vh;
+    height: 3vh;
+    padding-top: .5vh;
+    border-radius: .4vh;
+}
+
+#menu_items
+{
+    margin: 0px;
+    padding: 0px;
+    
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: 300;
+    color: rgb(236, 240, 241);
+
+    list-style-type: none;
+    text-align: left;
+    line-height: 33px;
+
+    width: 47vh;
+}
+
+#menu_items li
+{
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#menu_items li:nth-child(odd)
+{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#menu_items li:nth-child(even)
+{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.item_selected
+{
+    background-color: rgb(236, 240, 241) !important;
+    color: black;
+    font-weight: 400;
+}
+
+#menu_status
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: 400;
+    color: #171717;
+    
+    background-color: #ededed;
+
+    width: 47vh;
+}
+
+#menu_directions
+{
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+    text-align: center;
+    font-size: 18pt;
+    color: #ededed;
+    width: 47vh;
+    margin-top: 1vh;
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+    background-color: #dc143c;
+}
